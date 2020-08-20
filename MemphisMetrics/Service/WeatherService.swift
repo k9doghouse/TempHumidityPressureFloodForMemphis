@@ -13,7 +13,7 @@ class WeatherService {
   func getWeather(city: String, completion: @escaping(Weather?) -> ()) {
 
     // MARK: Please Get An API Key For Yourself. Mine is below. Insert yours please.
-    guard let urlWeather = URL(string: "http://api.openweathermap.org/data/2.5/weather?q=Memphis&appid=f669527cea6d684c6a62a91ba5e8513e&units=imperial") else {
+    guard let urlWeather = URL(string: "http://api.openweathermap.org/data/2.5/weather?q=Memphis&appid=GET-OPEN-WEATHER-API-KEY&units=imperial") else {
       completion(nil)
       return
     }
